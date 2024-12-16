@@ -1,0 +1,330 @@
+:root {
+    --font-family: 'Courier New', Courier, monospace;
+    --bold-font: 700;
+    --bg-color: #131516;
+    --primary-color: #67a83d;
+    --secondary-color: #e9ad0c;
+    --shadow: #8b8eaf;
+    --bottom-margin: 0.5rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+
+  html, body {
+    scroll-behavior: smooth;
+    user-select: none;
+    height: 100%;
+    margin: 0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: #181a1b;
+    color: #67a83d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #000000;
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.304);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+
+  .about img {
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--shadow);
+    background-color: #000000;
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+  .whoami-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .whoami-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+  
+  .whoami-section p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+
+  .dw0rsec-small {
+    height: 19.5rem;
+    width: 19.5rem;
+    margin-right: 1rem;
+  }
+
+    .tools {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .tools-header {
+    margin-bottom: 1rem;
+  }
+  
+  .tools-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+  .icon-card {
+    background-color: #000;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .projects {
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 65%;
+    height: 60%;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-card {
+    background-color: #000;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--shadow);
+    padding: 20px;
+    margin: 30px;
+  }
+
+  .projects-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+  
+  .contact-profile {
+    height: 9.0rem;
+    width: 9.0rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-header {
+    margin-bottom: 8rem;
+  }
+
+  footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+
+    .about {
+      margin-top: -1rem;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .about img {
+          height: 20rem;
+          width: 20rem;
+      }
+  
+    .bio {
+      margin-top: -1rem;
+      width: 20rem;
+      font-size: 13px;
+    }
+
+    .whoami-section {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    }
+  
+    .whoami-header h2 {
+      text-align: center;
+    }
+  
+    .whoami-section p {
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    .dw0rsec-small {
+      display: none;
+    }
+
+    .icon {
+      width: 9.25rem;
+      height: 9.25rem;
+    }
+
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-container {
+      width: 20.875rem;
+    }
+  }
