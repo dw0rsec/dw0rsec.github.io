@@ -28,7 +28,7 @@ img.addEventListener("mousemove", function(event) {
 });
 
 img.addEventListener("mouseout", function() {
-  if (clickCount < 7) {
+  if (clickCount < 16) {
     img.src = "/assets/images/dw0rsec.png";
   }
 });
