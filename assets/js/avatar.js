@@ -37,6 +37,54 @@ function setCookie(name, value) {
   document.cookie = `${name}=${value}; path=/`;
 }
 
+function base64UrlEncode(str) {
+  return btoa(str)
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/, '');
+}
+
+function createJWT(payload, secretKey) {
+  const header = {
+    alg: 'HS256',
+    typ: 'JWT'
+  };
+
+  const payloadJson = JSON.stringify(payload);
+  const encodedHeader = base64UrlEncode(JSON.stringify(header));
+  const encodedPayload = base64UrlEncode(payloadJson);
+  const data = `${encodedHeader}.${encodedPayload}`;
+
+  return crypto.subtle.digest('SHA-256', new TextEncoder().encode(data)).then(hashBuffer => {
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+      const signature = base64UrlEncode(hashHex);
+
+      return `${encodedHeader}.${encodedPayload}.${signature}`;
+    });
+}
+
+const payload = {
+  userId: 666,
+  username: 'killer',
+  role: 'MURDERER'
+};
+
+function generateRandomString(length) {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  
+  return result;
+}
+
+const randomString = generateRandomString(32);
+const secretKey = randomString; // should be on the backend !
+
 img.addEventListener("click", function() {
   if (clickCount === 1) {
     console.log('Yikes !');
@@ -71,7 +119,9 @@ img.addEventListener("click", function() {
   } else if (clickCount === 16) {
     console.log(killer, 'color: red');
     img.src = "/assets/images/tombstone.png";
-    setCookie('MURDERER', 'WW91IGFyZSBhIGtpbGxlciEgU2hhbWUgb24geW91Lg==')
+    createJWT(payload, secretKey).then(jwt => {
+      setCookie('token', jwt);
+    });
   } 
 
   clickCount++;
