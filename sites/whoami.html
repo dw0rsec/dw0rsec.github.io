@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://scripts.simpleanalyticscdn.com https://unpkg.com; connect-src 'self' https://queue.simpleanalyticscdn.com https://unpkg.com/; img-src 'self' https://queue.simpleanalyticscdn.com https://simpleanalyticsbadges.com;">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"/>
-    <link rel="stylesheet" href="/assets/css/styles.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" crossorigin="anonymous">
     <title>dw0rsec | Whoami</title>
   </head>
 
   <body>
     <nav>
-        <h1><a href="/index.html">dw0rsec</a></h1>
-        <ul class="navigation">
-          <li><a href="/sites/whoami.html" class="nav-link">Whoami</a></li>
-          <li><a href="/sites/workinprogress.html" class="nav-link">???</a></li>
-          <li><a href="/sites/projects.html" class="nav-link">Projects</a></li>
-          <li><a href="/sites/contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-      </nav>
+      <h1><a href="/index.html">dw0rsec</a></h1>
+      <ul class="navigation">
+        <li><a href="/sites/whoami.html" class="nav-link">Whoami</a></li>
+        <li><a href="/sites/workinprogress.html" class="nav-link">???</a></li>
+        <li><a href="/sites/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="/sites/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
 
-      <section class="whoami" id="whoami">
-        <h2 class="whoami-header">Whoami</h2>
-        <div class="whoami-section">
-          <img id="dw0rsec-small" src="/assets/images/dw0rsec_whoami.png" alt="dw0rsec-small" loading="lazy" class="dw0rsec-small"/>
-          <p>
-            Hello, World!👋 I'm dw0rsec and I'm a hobby developer from Germany 🇩🇪. I'm interested in Linux, infosec, and everything tech related. Currently, I'm working on my Python 🐍 skills, because it is best suited for me to script small things together. I love the command line, and whenever possible, I prefer TUI 💲 apps over GUIs for that authentic, minimalist experience, and I mainly use tillig window managers like i3wm or sway on Linux 🐧. I also enjoy Dockerizing 🐳 applications to replace the need for a VM, for example for ctfs or coding.
+    <section class="whoami" id="whoami">
+      <h2 class="whoami-header">Whoami</h2>
+      <div class="whoami-section">
+        <img id="dw0rsec-small" src="/assets/images/dw0rsec_whoami.png" alt="dw0rsec-small" loading="lazy" class="dw0rsec-small"/>
+        <p>
+          Hello, World!👋 I'm dw0rsec and I'm a hobby developer from Germany 🇩🇪. I'm interested in Linux, infosec, and everything tech related. Currently, I'm working on my Python 🐍 skills, because it is best suited for me to script small things together. I love the command line, and whenever possible, I prefer TUI 💲 apps over GUIs for that authentic, minimalist experience, and I mainly use tillig window managers like i3wm or sway on Linux 🐧. I also enjoy Dockerizing 🐳 applications to replace the need for a VM, for example for ctfs or coding.
 
-            I'm a big fan of the open-source community, and Linux, especially Fedora and Debian holds a special place in my heart, but in the meantime I also feel quite comfortable working with macOS 🍎.
+          I'm a big fan of the open-source community, and Linux, especially Fedora and Debian holds a special place in my heart, but in the meantime I also feel quite comfortable working with macOS 🍎.
 
-            In my spare time, I like to play beginner-level Capture The Flag 🏴‍☠️ (CTF) challenges, because I am interested in webhacking 🕸️ (sometimes it is really witchcraft 🧙‍♂️) and I want to improve my knowledge in this field.
+          In my spare time, I like to play beginner-level Capture The Flag 🏴‍☠️ (CTF) challenges, because I am interested in webhacking 🕸️ (sometimes it is really witchcraft 🧙‍♂️) and I want to improve my knowledge in this field.
 
-            When I'm AFK, you can probably find me slurping down a bowl of ramen 🍜 or watching some gloriously bad horror movies 🎃, because who doesn't love a good (or bad) scare?
-          </p>
+          When I'm AFK, you can probably find me slurping down a bowl of ramen 🍜 or watching some gloriously bad horror movies 🎃, because who doesn't love a good (or bad) scare?
+        </p>
+      </div>
+    </section>
+
+    <section class="tools" id="tools">
+      <h2 class="tools-header">My Favorite Tools</h2>
+        <div class="tools-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img src="/assets/icons/git.svg" alt="git" id="git" loading="lazy" class="icon icon-card"/>
+          <img src="/assets/icons/docker.svg" alt="docker" id="docker" loading="lazy" class="icon icon-card"/>
+          <img src="/assets/icons/python.svg" alt="python" id="python" loading="lazy" class="icon icon-card"/>
         </div>
-      </section>
-
-      <section class="tools" id="tools">
-        <h2 class="tools-header">My Favorite Tools</h2>
-          <div class="tools-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img src="/assets/icons/git.svg" alt="git" id="git" loading="lazy" class="icon icon-card"/>
-            <img src="/assets/icons/docker.svg" alt="docker" id="docker" loading="lazy" class="icon icon-card"/>
-            <img src="/assets/icons/python.svg" alt="python" id="python" loading="lazy" class="icon icon-card"/>
-          </div>
-          <div class="second-set animate__animated animate__pulse">
-            <img src="/assets/icons/vim.svg" alt="vim" id="vim" loading="lazy" class="icon icon-card"/>
-            <img src="/assets/icons/fedora.svg" alt="fedora" id="fedora" loading="lazy" class="icon icon-card"/>
-            <img src="/assets/icons/bash.svg" alt="bash" id="bash" loading="lazy" class="icon icon-card"/>
-          </div>
+        <div class="second-set animate__animated animate__pulse">
+          <img src="/assets/icons/vim.svg" alt="vim" id="vim" loading="lazy" class="icon icon-card"/>
+          <img src="/assets/icons/fedora.svg" alt="fedora" id="fedora" loading="lazy" class="icon icon-card"/>
+          <img src="/assets/icons/bash.svg" alt="bash" id="bash" loading="lazy" class="icon icon-card"/>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer>
-        <p class="copy">&copy; <a href="https://raw.githubusercontent.com/dw0rsec/dw0rsec.github.io/refs/heads/main/LICENSE" target="_blank"><s>Copyright</s></a> 2024</p>
-        <p class="copy">&#x2661; the shell<a href="https://infosec.exchange/@dw0rsec" target="_blank"> dw0rsec</a></p>
-      </footer>
+    <footer>
+      <p class="copy">&copy; <a href="https://raw.githubusercontent.com/dw0rsec/dw0rsec.github.io/refs/heads/main/LICENSE" target="_blank"><s>Copyright</s></a> 2024</p>
+      <p class="copy">&#x2661; the shell<a href="https://infosec.exchange/@dw0rsec" target="_blank"> dw0rsec</a></p>
+    </footer>
 
-      <script src="/assets/js/img.js"></script>
-      <script src="/assets/js/site.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" integrity="sha256-Bi+gzul97kP90CUgTGd2rmCdcaVbYRexALy/at85S9I=" crossorigin="anonymous"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" integrity="sha256-rrxoBOddMUI9Hqg7AdXOPST4sFpIXm/13+baTHTexRE=" crossorigin="anonymous"></script>
-      <script async defer src="https://scripts.simpleanalyticscdn.com/sri/v11.js" integrity="sha256-hkUzQr3zWmSDnmhw95ZmQSZ949upqD+ML9ejiN0UIIE= sha384-rfv15RJy1bBYZ1Mf4xizO26jorXb2myipCvHXy4rkG0SuEET96S+m0sTzu5vfbSI sha512-lQzjzTbOxHLwkZGDVMf4V0sm8v2Mrqm73IvKcXBftJ/MSZKQC4/jwKFToxT+3IVAVWQzLplSNHH8gM5d7b1BSg==" crossorigin="anonymous"></script>
-      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-    </body>
+    <script src="/assets/js/img.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" integrity="sha256-Bi+gzul97kP90CUgTGd2rmCdcaVbYRexALy/at85S9I=" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" integrity="sha256-rrxoBOddMUI9Hqg7AdXOPST4sFpIXm/13+baTHTexRE=" crossorigin="anonymous"></script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+  </body>
 </html>
 
 <!-- HAPPY HACKING !!! 🏴‍☠️ -->
