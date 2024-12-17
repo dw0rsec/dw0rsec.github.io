@@ -34,7 +34,7 @@ img.addEventListener("mouseout", function() {
 });
 
 function setCookie(name, value) {
-  document.cookie = `${name}=${value}; path=/`;
+  document.cookie = '${name}=${value}; path=/; SameSite=None; Secure';
 }
 
 function base64UrlEncode(str) {
