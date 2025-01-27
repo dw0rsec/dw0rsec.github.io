@@ -25,7 +25,7 @@ function getCookie(name) {
 }
 
 function setCookie(name, value) {
-  document.cookie = `${name}=${value}; path=/`;
+  document.cookie = `${name}=${value}; path=/; SameSite=None; Secure`;
 }
 
 if (!getCookie('darkReaderAlertShown')) {
