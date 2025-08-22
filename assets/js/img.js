@@ -3,7 +3,7 @@ const links = {
   docker: "https://www.docker.com/",
   python: "https://www.python.org/",
   vim: "https://www.vim.org/",
-  fedora: "https://fedoraproject.org/",
+  debian: "https://www.debian.org/",
   bash: "https://tiswww.case.edu/php/chet/bash/bashtop.html"
 };
 
