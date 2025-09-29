@@ -1,5 +1,5 @@
 :root {
-    --font-family: 'Courier New', Courier, monospace;
+    --font-family: 'Courier New', 'Liberation Mono', Courier, monospace;
     --bold-font: 700;
     --bg-color: #181a1b;
     --primary-color: #67a83d;
