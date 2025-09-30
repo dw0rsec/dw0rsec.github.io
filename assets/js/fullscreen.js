@@ -15,5 +15,5 @@ function toggleFullscreen(event) {
 }
 
 images.forEach(image => {
-    image.addEventListener('click', toggleFullscreen);
+    image.addEventListener("click", toggleFullscreen);
 });

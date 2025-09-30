@@ -14,23 +14,40 @@ navLink.forEach((link) =>
   })
 );
 
-const hck = '%cHAPPY HACKING !!! 🏴‍☠️';
-console.log(hck, 'color: green');
+const hck = "%cHAPPY HACKING !!! 🏴‍☠️";
+console.log(hck, "color: green");
+
+function coconut(html){
+  const coco = localStorage.getItem("tokenFc");
+  if (coco === "1befc8108b3b9da077d317e79d0c241e") {
+    document.documentElement.innerHTML = html
+  }
+}
+
+coconut(atob("PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICAgIDxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtU2VjdXJpdHktUG9saWN5IiBjb250ZW50PSJzY3JpcHQtc3JjICdzZWxmJyAndW5zYWZlLWlubGluZScgaHR0cHM6Ly9zY3JpcHRzLnNpbXBsZWFuYWx5dGljc2Nkbi5jb20gaHR0cHM6Ly91bnBrZy5jb207IGNvbm5lY3Qtc3JjICdzZWxmJyBodHRwczovL3F1ZXVlLnNpbXBsZWFuYWx5dGljc2Nkbi5jb20gaHR0cHM6Ly91bnBrZy5jb20vOyBpbWctc3JjICdzZWxmJyBodHRwczovL3F1ZXVlLnNpbXBsZWFuYWx5dGljc2Nkbi5jb20gaHR0cHM6Ly9zaW1wbGVhbmFseXRpY3NiYWRnZXMuY29tOyI+CiAgICA8bGluayByZWw9Imljb24iIHR5cGU9ImltYWdlL3BuZyIgc2l6ZXM9IjMyeDMyIiBocmVmPSIvYXNzZXRzL2ljb25zL2Zhdmljb24tMzJ4MzIucG5nIj4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL2Fzc2V0cy9jc3Mvc3R5bGVzLmNzcyI+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL2FuaW1hdGUuY3NzLzQuMS4xL2FuaW1hdGUubWluLmNzcyIgaW50ZWdyaXR5PSJzaGEyNTYtWDdycm40NGwxK0FVTzY1aDFMR0FMQmJPYzVDNWJPc3RTWXNObHY5TWhUOD0iIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPgogICAgPHRpdGxlPmR3MHJzZWMgfCBCTE9DS0VEITwvdGl0bGU+CiAgPC9oZWFkPgoKICA8Ym9keT4KICAgIDxuYXY+CiAgICAgIDxoMT48YSBocmVmPSIvaW5kZXguaHRtbCI+ZHcwcnNlYzwvYT48L2gxPgogICAgICA8dWwgY2xhc3M9Im5hdmlnYXRpb24iPgogICAgICAgIDxsaT48YSBocmVmPSIvc2l0ZXMvd2hvYW1pLmh0bWwiIGNsYXNzPSJuYXYtbGluayI+V2hvYW1pPC9hPjwvbGk+CiAgICAgICAgPGxpPjxhIGhyZWY9Ii9zaXRlcy93b3JraW5wcm9ncmVzcy5odG1sIiBjbGFzcz0ibmF2LWxpbmsiPj8/PzwvYT48L2xpPgogICAgICAgIDxsaT48YSBocmVmPSIvc2l0ZXMvcHJvamVjdHMuaHRtbCIgY2xhc3M9Im5hdi1saW5rIj5Qcm9qZWN0czwvYT48L2xpPgogICAgICAgIDxsaT48YSBocmVmPSIvc2l0ZXMvY29udGFjdC5odG1sIiBjbGFzcz0ibmF2LWxpbmsiPkNvbnRhY3Q8L2E+PC9saT4KICAgICAgPC91bD4KICAgICAgPGJ1dHRvbiBjbGFzcz0iYnVyZ2VyLW1lbnUiIGlkPSJidXJnZXItbWVudSI+CiAgICAgICAgPGlvbi1pY29uIGNsYXNzPSJiYXJzIiBuYW1lPSJtZW51LW91dGxpbmUiPjwvaW9uLWljb24+CiAgICAgIDwvYnV0dG9uPgogICAgPC9uYXY+CiAgICAKICAgIDxkaXY+CiAgICAgIDxwIHN0eWxlPSJjb2xvcjogcmVkOyBmb250LXdlaWdodDogYm9sZDsgZm9udC1zaXplOiAzMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij4KICAgICAgICBZb3UgYXJlIEJMT0NLRUQgZm9yIGNsaWNraW5nIG15IGZhY2UhCiAgICAgIDwvcD4KICAgIDwvZGl2PgoKICAgIDxmb290ZXI+CiAgICAgIDxwIGNsYXNzPSJjb3B5Ij4mY29weTsgPGEgaHJlZj0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2R3MHJzZWMvZHcwcnNlYy5naXRodWIuaW8vcmVmcy9oZWFkcy9tYWluL0xJQ0VOU0UiIHRhcmdldD0iX2JsYW5rIj48cz5Db3B5cmlnaHQ8L3M+PC9hPiAyMDI0PC9wPgogICAgICA8cCBjbGFzcz0iY29weSI+JiN4MjY2MTsgdGhlIHNoZWxsPGEgaHJlZj0iaHR0cHM6Ly9pbmZvc2VjLmV4Y2hhbmdlL0BkdzByc2VjIiB0YXJnZXQ9Il9ibGFuayI+IGR3MHJzZWM8L2E+PC9wPgogICAgPC9mb290ZXI+CgogICAgPHNjcmlwdCBzcmM9Ii9hc3NldHMvanMvc2l0ZS5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHR5cGU9Im1vZHVsZSIgc3JjPSJodHRwczovL3VucGtnLmNvbS9pb25pY29uc0A3LjEuMC9kaXN0L2lvbmljb25zL2lvbmljb25zLmVzbS5qcyIgaW50ZWdyaXR5PSJzaGEyNTYtQmkrZ3p1bDk3a1A5MENVZ1RHZDJybUNkY2FWYllSZXhBTHkvYXQ4NVM5ST0iIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBub21vZHVsZSBzcmM9Imh0dHBzOi8vdW5wa2cuY29tL2lvbmljb25zQDcuMS4wL2Rpc3QvaW9uaWNvbnMvaW9uaWNvbnMuanMiIGludGVncml0eT0ic2hhMjU2LXJyeG9CT2RkTVVJOUhxZzdBZFhPUFNUNHNGcElYbS8xMytiYVRIVGV4UkU9IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgYXN5bmMgZGVmZXIgc3JjPSJodHRwczovL3NjcmlwdHMuc2ltcGxlYW5hbHl0aWNzY2RuLmNvbS9sYXRlc3QuanMiPjwvc2NyaXB0PgogICAgPG5vc2NyaXB0PjxpbWcgc3JjPSJodHRwczovL3F1ZXVlLnNpbXBsZWFuYWx5dGljc2Nkbi5jb20vbm9zY3JpcHQuZ2lmIiBhbHQ9IiIgcmVmZXJyZXJwb2xpY3k9Im5vLXJlZmVycmVyLXdoZW4tZG93bmdyYWRlIiAvPjwvbm9zY3JpcHQ+CiAgPC9ib2R5Pgo8L2h0bWw+"))
 
 function getCookie(name) {
-  return document.cookie.split('; ').find(row => row.startsWith(name + '=')) ? true : false;
+  return document.cookie.split("; ").find(row => row.startsWith(name + "=")) ? true : false;
 }
 
 function setCookie(name, value) {
   document.cookie = `${name}=${value}; path=/; SameSite=None; Secure`;
 }
 
-if (!getCookie('darkReaderAlertShown')) {
-  const isDarkReaderDetected = [...document.querySelectorAll('style')].some((el) => el.classList.contains('darkreader'));
+function blockUser() {
+  return true;
+}
+
+if (!getCookie("darkReaderAlertShown")) {
+  const isDarkReaderDetected = [...document.querySelectorAll("style")].some((el) => el.classList.contains("darkreader"));
 
   if (isDarkReaderDetected) {
     alert("Recommendation: Turn off Dark Reader for maximum beauty. My site is built dark mode only. 😅");
     
-    setCookie('darkReaderAlertShown', 'true');
+    setCookie("darkReaderAlertShown", "true");
   }
+}
+
+if (getCookie("FaceClicker")) {
+  blockUser();
 }
