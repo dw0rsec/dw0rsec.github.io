@@ -18,10 +18,7 @@ const hck = '%cHAPPY HACKING !!! 🏴‍☠️';
 console.log(hck, 'color: green');
 
 function getCookie(name) {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(';').shift();
-  return null;
+  return document.cookie.split('; ').find(row => row.startsWith(name + '=')) ? true : false;
 }
 
 function setCookie(name, value) {
