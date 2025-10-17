@@ -1,10 +1,6 @@
-#
-#	 R.I.P
-#
-#	* 1994
-#	+ 2025
-#
-#	Died as a result of systematic neglect by AI corporations.
+User-agent: *
+Disallow: /dontlookinhere/
+Disallow: /dontlookinhere/index.html
 
 User-agent: AddSearchBot
 User-agent: AI2Bot
@@ -101,3 +97,10 @@ User-agent: YandexAdditionalBot
 User-agent: YouBot
 
 Disallow: /
+
+#	 R.I.P
+#
+#	* 1994
+#	+ 2025
+#
+#	Died as a result of systematic neglect by AI corporations.
