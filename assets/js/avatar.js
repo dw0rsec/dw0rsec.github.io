@@ -18,8 +18,10 @@ img.addEventListener("mousemove", function(event) {
       mouseX > centerX - centerThreshold && mouseX < centerX + centerThreshold &&
       mouseY > centerY - centerThreshold && mouseY < centerY + centerThreshold
     ) {
+      this.style.cursor = "pointer";
       img.src = "/assets/images/dw0rsec_touched.png";
     } else {
+      this.style.cursor = "default";
       if (clickCount > 2) {
         img.src = "/assets/images/dw0rsec_angry.png";
       } else {
